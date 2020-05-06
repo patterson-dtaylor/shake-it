@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BZy-yE-gQr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Shake_It" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="y6S-Ak-1T6">
+                                <rect key="frame" x="0.0" y="88" width="414" height="764"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake It!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDj-Rc-DCq">
+                                        <rect key="frame" x="131.5" y="0.0" width="151.5" height="55"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOb-lW-clB">
+                                        <rect key="frame" x="0.0" y="60" width="414" height="180.5"/>
+                                        <color key="backgroundColor" red="0.94509803921568625" green="0.76862745098039209" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Maracas" image="maracas"/>
+                                        <connections>
+                                            <segue destination="r2d-im-3uX" kind="show" identifier="MaracasSegue" id="3Ib-Xq-wuc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0g-Rn-rjw">
+                                        <rect key="frame" x="0.0" y="245.5" width="414" height="146"/>
+                                        <color key="backgroundColor" red="0.90196078430000004" green="0.4941176471" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Shekere" image="shekere">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="mx4-of-Svv" kind="show" identifier="ShekereSegue" id="mGp-jk-Cob"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVe-Df-nQx">
+                                        <rect key="frame" x="0.0" y="396.5" width="414" height="181"/>
+                                        <color key="backgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Tamborine" image="tamborine">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="FEB-LV-vUY" kind="show" identifier="TamborineSegue" id="3dr-jt-UPR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="af6-m9-KIQ">
+                                        <rect key="frame" x="0.0" y="582.5" width="414" height="181.5"/>
+                                        <color key="backgroundColor" red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <state key="normal" title="Cabasa" image="cabasa">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="mh1-5x-nPe" kind="show" identifier="CabasaSegue" id="G4Q-gb-kPz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="af6-m9-KIQ" secondAttribute="trailing" id="5HC-74-y34"/>
+                                    <constraint firstAttribute="trailing" secondItem="B0g-Rn-rjw" secondAttribute="trailing" id="EjT-AC-gTq"/>
+                                    <constraint firstItem="cOb-lW-clB" firstAttribute="leading" secondItem="y6S-Ak-1T6" secondAttribute="leading" id="FUm-9B-qMa"/>
+                                    <constraint firstAttribute="trailing" secondItem="cOb-lW-clB" secondAttribute="trailing" id="ZCW-Ve-dnC"/>
+                                    <constraint firstItem="af6-m9-KIQ" firstAttribute="leading" secondItem="y6S-Ak-1T6" secondAttribute="leading" id="a9Y-BL-bKn"/>
+                                    <constraint firstItem="NVe-Df-nQx" firstAttribute="leading" secondItem="y6S-Ak-1T6" secondAttribute="leading" id="lyS-hg-MHT"/>
+                                    <constraint firstItem="B0g-Rn-rjw" firstAttribute="leading" secondItem="y6S-Ak-1T6" secondAttribute="leading" id="wyw-B3-19m"/>
+                                    <constraint firstAttribute="trailing" secondItem="NVe-Df-nQx" secondAttribute="trailing" id="xyM-ld-U3c"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.89803921568627454" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="y6S-Ak-1T6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="22h-Hu-62r"/>
+                            <constraint firstItem="y6S-Ak-1T6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7H1-Br-81K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y6S-Ak-1T6" secondAttribute="bottom" constant="10" id="PyY-C5-euh"/>
+                            <constraint firstAttribute="trailing" secondItem="y6S-Ak-1T6" secondAttribute="trailing" id="Wq0-YK-120"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="P7t-Mu-geJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="137.94642857142856"/>
+        </scene>
+        <!--Cabasa View Controller-->
+        <scene sceneID="lLg-od-BSW">
+            <objects>
+                <viewController id="mh1-5x-nPe" userLabel="Cabasa View Controller" customClass="CabasaViewController" customModule="Shake_It" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pbY-db-vWf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="O55-0U-4zi">
+                                <rect key="frame" x="40" y="227" width="334" height="385"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="cabasa" translatesAutoresizingMaskIntoConstraints="NO" id="jmQ-o1-McJ">
+                                        <rect key="frame" x="82" y="0.0" width="170.5" height="253.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cabasa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffU-dS-qIe">
+                                        <rect key="frame" x="95.5" y="326.5" width="143" height="58.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="45"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="CabasaBlack"/>
+                        <constraints>
+                            <constraint firstItem="O55-0U-4zi" firstAttribute="top" secondItem="JDP-La-P4w" secondAttribute="top" constant="139" id="71W-7J-Ml7"/>
+                            <constraint firstItem="O55-0U-4zi" firstAttribute="leading" secondItem="pbY-db-vWf" secondAttribute="leadingMargin" constant="20" id="ECI-xD-2mC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="O55-0U-4zi" secondAttribute="trailing" constant="20" id="ia3-fw-fRk"/>
+                            <constraint firstItem="JDP-La-P4w" firstAttribute="bottom" secondItem="O55-0U-4zi" secondAttribute="bottom" constant="250" id="ndm-cT-MYl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JDP-La-P4w"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zbb-0A-HHt"/>
+                    <connections>
+                        <outlet property="cabasaLabel" destination="ffU-dS-qIe" id="WV4-Ye-diA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jn5-gL-bXS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.1304347826087" y="902.67857142857133"/>
+        </scene>
+        <!--Tamborine View Controller-->
+        <scene sceneID="JDl-wI-9rJ">
+            <objects>
+                <viewController id="FEB-LV-vUY" customClass="TamborineViewController" customModule="Shake_It" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i7V-mF-zbz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="naI-Pd-Z2W">
+                                <rect key="frame" x="40" y="224" width="334" height="388"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="tamborine" translatesAutoresizingMaskIntoConstraints="NO" id="8Ju-iH-Epd">
+                                        <rect key="frame" x="82" y="0.0" width="170.5" height="295.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamborine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p61-4Q-O7M">
+                                        <rect key="frame" x="62.5" y="329.5" width="209.5" height="58.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="45"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="TamborineRed"/>
+                        <constraints>
+                            <constraint firstItem="zfN-9w-CzP" firstAttribute="bottom" secondItem="naI-Pd-Z2W" secondAttribute="bottom" constant="250" id="RLp-hy-pqd"/>
+                            <constraint firstItem="naI-Pd-Z2W" firstAttribute="leading" secondItem="i7V-mF-zbz" secondAttribute="leadingMargin" constant="20" id="oc9-Nn-HLZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="naI-Pd-Z2W" secondAttribute="trailing" constant="20" id="oce-Fi-OWG"/>
+                            <constraint firstItem="naI-Pd-Z2W" firstAttribute="top" secondItem="zfN-9w-CzP" secondAttribute="top" constant="136" id="p7L-fm-qhf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zfN-9w-CzP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="olK-ma-ygo"/>
+                    <connections>
+                        <outlet property="tamborineLabel" destination="p61-4Q-O7M" id="12E-Bx-NXP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2wG-SA-NWq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2040.5797101449277" y="509.59821428571428"/>
+        </scene>
+        <!--Shekere View Controller-->
+        <scene sceneID="gIc-xz-mC2">
+            <objects>
+                <viewController id="mx4-of-Svv" userLabel="Shekere View Controller" customClass="ShekereViewController" customModule="Shake_It" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zcv-Ej-vqj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="zSz-nD-cA3">
+                                <rect key="frame" x="40" y="227" width="334" height="385"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="shekere" translatesAutoresizingMaskIntoConstraints="NO" id="y5o-la-Yai">
+                                        <rect key="frame" x="105.5" y="0.0" width="123" height="283"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shekere" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eh-3t-Uld">
+                                        <rect key="frame" x="98.5" y="333" width="137.5" height="52"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="ShekereOrange"/>
+                        <constraints>
+                            <constraint firstItem="zSz-nD-cA3" firstAttribute="leading" secondItem="zcv-Ej-vqj" secondAttribute="leadingMargin" constant="20" id="JN3-7C-Nol"/>
+                            <constraint firstItem="6MM-zV-TNh" firstAttribute="bottom" secondItem="zSz-nD-cA3" secondAttribute="bottom" constant="250" id="L0X-et-Brj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zSz-nD-cA3" secondAttribute="trailing" constant="20" id="Mil-pf-t41"/>
+                            <constraint firstItem="zSz-nD-cA3" firstAttribute="top" secondItem="6MM-zV-TNh" secondAttribute="top" constant="139" id="eE1-Yk-tSi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6MM-zV-TNh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hIr-4H-oho"/>
+                    <connections>
+                        <outlet property="shekereLabel" destination="6eh-3t-Uld" id="Wqp-dx-SQ9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sP5-vg-fFF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2040.5797101449277" y="-267.1875"/>
+        </scene>
+        <!--Maracas View Controller-->
+        <scene sceneID="zHa-gs-UYP">
+            <objects>
+                <viewController id="r2d-im-3uX" userLabel="Maracas View Controller" customClass="MaracasViewController" customModule="Shake_It" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iFn-Je-NUh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="IXZ-Bi-RK9">
+                                <rect key="frame" x="20" y="227" width="374" height="385"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="maracas" translatesAutoresizingMaskIntoConstraints="NO" id="QpH-4U-qQv">
+                                        <rect key="frame" x="102" y="0.0" width="170.5" height="265"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maracas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSj-fs-4JY">
+                                        <rect key="frame" x="108" y="333" width="158.5" height="52"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.76862745098039209" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="adc-Jn-n9J" firstAttribute="bottom" secondItem="IXZ-Bi-RK9" secondAttribute="bottom" constant="250" id="0q8-9r-YrM"/>
+                            <constraint firstItem="IXZ-Bi-RK9" firstAttribute="leading" secondItem="iFn-Je-NUh" secondAttribute="leadingMargin" id="Cra-gi-eQE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IXZ-Bi-RK9" secondAttribute="trailing" id="KeA-fI-7tz"/>
+                            <constraint firstItem="IXZ-Bi-RK9" firstAttribute="top" secondItem="adc-Jn-n9J" secondAttribute="top" constant="139" id="W2d-FI-i4C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="adc-Jn-n9J"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kNK-rv-MMb"/>
+                    <connections>
+                        <outlet property="maracasLabel" destination="ZSj-fs-4JY" id="5Hw-B3-QPn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDf-Eh-wM4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.1304347826087" y="-615.40178571428567"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wSm-uW-d1Z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BZy-yE-gQr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="erY-Hl-n9L">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="35"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Wft-Zw-Pnb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jqS-10-n7e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cabasa" width="170.5" height="170.5"/>
+        <image name="maracas" width="170.5" height="170.5"/>
+        <image name="shekere" width="123" height="138"/>
+        <image name="tamborine" width="170.5" height="170.5"/>
+        <namedColor name="CabasaBlack">
+            <color red="0.20392156862745098" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ShekereOrange">
+            <color red="0.90196078431372551" green="0.49411764705882355" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TamborineRed">
+            <color red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
